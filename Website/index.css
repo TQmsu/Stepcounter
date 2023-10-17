@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FFFFFF;
+}
+
+.container-view, .container-user {
+    width: 357px;
+    height: 446px;
+    background-color: #F9F9F9;
+    border: 1px solid #D5D7DE;
+    border-radius: 12px;
+    margin: 0 25px;
+    position: relative; /* Add position: relative to position the child containers relative to their parents */
+}
+
+.label {
+    font-size: 1.5rem;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #000000;
+    text-align: center;
+    margin-top: 14px; /* Space between the label and container-content */
+    
+}
+
+.container-content-view, .container-content-user {
+    margin: 8px 20px 20px 20px;
+    border: 2px solid rgba(0, 0, 0, 0.1); /* Black border at 10% opacity */
+    height: calc(100% - 74px); /* Calculate height considering top margin */
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    width: 250px;
+    height: 70px;
+    background-color: #F9F9F9;
+    border: 1px solid #E3E3E3;
+    margin: 10px; /* Adjusted for 20px gap */
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: #A4A4A4;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    font-weight: 400;
+
+}
+
+.button.selected {
+    border-color: #595959;
+    background-color: #06B4FF;
+    color: black;
+    font-weight: 700;
+}
+
+.beach-button {
+    align-self: center; /* Align the beach button in the center */
+}
+
+#userList {
+    width: 250px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.start-button {
+    margin-top:170px;
+    width: 80px;
+    height: 25px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #E3E3E3;
+    background-color: #F9F9F9;
+    border: 1px solid #E3E3E3;
+    cursor: not-allowed;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+.start-button.active {
+    background-color: #06B4FF;
+    border: 1px solid #00435f;
+    color: black;
+    cursor: pointer;
+    font-weight: 500;
+}

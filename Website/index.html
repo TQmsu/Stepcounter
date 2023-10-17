@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConnectStep Website</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container-view">
+        <div class="label">Select View</div>
+        <div class="container-content-view">
+            <button class="button" data-type="counter">Counter</button>
+            <button class="button beach-button" data-type="beach">Beach</button>
+            <button class="button" data-type="progress">Progress</button>
+        </div>
+    </div>
+    <div class="container-user">
+        <div class="label">Select User</div>
+        <div class="container-content-user">
+            <select id="userList"></select>
+            <button class="start-button">Start</button>
+        </div>
+        <script type="module" src="index.js"></script>
+        <script type="module" src="firebasedb.js"></script>
+</body>
+
+</html>
